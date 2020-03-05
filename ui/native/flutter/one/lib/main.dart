@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:graphql_flutter/graphql_flutter.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  final HttpLink httpLink = HttpLink(
+    url: 'http://localhost:5000/graphql',
+  );
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
