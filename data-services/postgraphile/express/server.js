@@ -12,7 +12,7 @@ const pgPool = new pg.Pool({
 app.use(
   postgraphile(
     pgPool,
-    process.env.SCHEMA_NAMES ? process.env.SCHEMA_NAMES.split(',') : ['lilac'],
+    process.env.SCHEMA_NAMES ? process.env.SCHEMA_NAMES.split(',') : ['blog'],
     {
       appendPlugins: [ConnectionFilterPlugin, PgManyToManyPlugin],
       graphileBuildOptions: {
@@ -28,5 +28,7 @@ app.use(
   )
 );
 
-app.listen(process.env.PORT || 5002);
+app.listen(process.env.PORT || 5000);
+console.log(`🚀 Server ready at http://localhost:5000/graphql`);
+console.log(`🚀 Graphiql UI ready at http://localhost:5000/graphiql`);
 

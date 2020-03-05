@@ -7,7 +7,7 @@ const PgManyToManyPlugin = require('@graphile-contrib/pg-many-to-many');
 
 const dbSchema = process.env.SCHEMA_NAMES
   ? process.env.SCHEMA_NAMES.split(',')
-  : ['lilac'];
+  : ['blog'];
 
 const pgPool = new pg.Pool({
   connectionString: (process.env.DATABASE_URL || 'postgres://postgres:postgres@127.0.0.1/blog'),
