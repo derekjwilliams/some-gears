@@ -21,6 +21,7 @@ app.use(
       watchPg: true,
       graphiql: true,
       enhanceGraphiql: true,
+      enableCors: true,
       allowExplain(req) {
         return true;
       },

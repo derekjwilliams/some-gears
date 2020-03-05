@@ -23,6 +23,7 @@ const postGraphileOptions = {
   graphiql: true,
   dynamicJson: true,
   watchPg: true,
+  enableCors: true,
   enhanceGraphiql: true,
   allowExplain(req) {
     return true;
