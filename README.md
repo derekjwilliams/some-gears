@@ -1,20 +1,24 @@
 # some-gears
 
-This is intended to help developers learn graphql by starting at the very basics and growing to a complex applications.
+This is intended to help developers learn graphql by starting at the very basics and growing to a set of complex applications that are similar to what would be found in a production environment.
 
 ## Motivation
 
 
 
-There are already many excellent tutorial for graphql, this is not intended to replace those.  There are also many Getting Started repositories out there, while some-gears does that, it also seeks to show developers how to go from there to actual working examples.
+There are already many excellent tutorials for graphql, this is not intended to replace those.  There are also many getting started repositories out there, while some-gears does that, it also seeks to show developers how to go from there to actual working examples that are non-trivial.
 
 A developer should be able to start with the simplest examples of databases and clients and work through subsequent more realistic examples.
 
 ## Notably absent
 
-There are no instructions for things like creating a database, web application, or other details that are very well documented by the respective software. A quick search will usually satisfy the developers need to learn how to perform those getting started tasks.
+### Getting Started in XYZ
 
-There will be Dockerfiles in many, but not all cases.
+There are no instructions for things like creating a database, web application, or other details that are very well documented elsewher; a quick search will usually satisfy the developers need to learn how to perform those getting started tasks and management tasks.
+
+### Docker, Compose, Kubernetes, Cloud Formation...
+
+There are Dockerfiles in many, but not all cases.
 
 As of now there are no Compose, or Kubernetes files, though these could be valuable additions to allow a developer to quickly see how the parts work together.
 
@@ -40,7 +44,7 @@ The goal is to grow this to Rust, R, Elixer, Elm, Python, R, Kotlin, Swift, Dart
 
 * HotChocolate
 
-*Notably absent is Prisma, which has just been rewritten in Rust and is just now in Preview (as of March 4, 2020).  Why I have time I will add Prisma, or if someone wants to add Prisma as a datasource that would be awesome.*
+*Notably absent is Prisma, which has just been rewritten in Rust and is just now in Preview (as of March 4, 2020).  When I have time, I will add Prisma, or if someone wants to add Prisma 2 that would be awesome. I would like to avoid Prisma 1, since Prisma 2 looks to be much better*
 
 ### Databases
 
@@ -52,13 +56,13 @@ The goal is to grow this to Rust, R, Elixer, Elm, Python, R, Kotlin, Swift, Dart
 
 * Neo4j
 
-Notably absent is MySQL, which can be added by anyone willing to help out.  The same applies to Oracle, MariaDB, MongoDB, Couch, etc.
+Notably absent is MySQL, which can be added by anyone willing to help out. Other missing databases: MariaDB, MongoDB, Couch, etc.
 
 
 
 ### Structure
 
-The code is broken into what a sensible set of folders. But that is certainly up for debate. The initial structure looks like (generated with: )
+The code is broken into a sensible set of folders, that is certainly up for debate. The initial structure looks like (generated with: )
 
 ```├── data-services
 │   ├── graphql
@@ -96,10 +100,12 @@ The code is broken into what a sensible set of folders. But that is certainly up
             └── one
 ```
 
-<todo>
+Initially the database ddls are simple, as complexity grows more complex ddls will be placed in a set of folders named respective of their complexity, similar to the web folder (but with different names indicating complexity (potentially names like wood, copper, iron, steel...), this would also apply to services layer.
+
+The web applications one through five will use the initial services and databases.
 
 
-##Top most folders
+## Top most folders
 
 ### data-services 
 
