@@ -3,7 +3,7 @@ import 'package:graphql_flutter/graphql_flutter.dart';
 
 void main() {
   final HttpLink httpLink = HttpLink(
-    url: 'http://localhost:5000/graphql',
+    uri: 'https://localhost:5000',
   );
   runApp(MyApp());
 }
