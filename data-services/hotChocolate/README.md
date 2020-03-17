@@ -4,6 +4,8 @@ This is intended to help developers learn graphql by using Hot Chocolate impleme
 
 ## Database setup
 You will need to have a sqlServer database running locally or remotely.  This database needs to consist of 4 tables.  
+To add the connection string in the sln:  the CS needs to live in appsettings.json under the sln context.
+you will need to add it under the empty "ConnectionString" key
 
 ## Nuget packages to install
 HotChocolate version 10.3.5 <br />
