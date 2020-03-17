@@ -4,6 +4,17 @@ This is intended to help developers learn graphql by using Hot Chocolate impleme
 
 ## Database setup
 You will need to have a sqlServer database running locally or remotely.  This database needs to consist of 4 tables.  
+
+## Nuget packages to install
+HotChocolate version 10.3.5
+HotChocolate.AspNetCore version 10.3.5
+HotChocolate.AspNetCore.Playground version 10.3.5
+HotChocolate.AspNetCore.Voyager version 10.3.5
+HotChocolate.Subscriptions.InMemory version 10.3.5
+HotChocolate.Types.Filters version 10.3.5
+HotChocolate.Types.Sorting version 10.3.5
+Microsoft.EntityFrameworkcore.SqlServer 3.1.1
+
 ## Clients...
 CREATE TABLE [dbo].[Clients](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
