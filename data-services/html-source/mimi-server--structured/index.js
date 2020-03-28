@@ -1,5 +1,9 @@
 const { ApolloServer, gql } = require('apollo-server');
-const fetch = require('node-fetch');
-const cheerio = require('cheerio');
-const { resolverMap } = require('./resolvers');
-// const schema = require('schema');
+import resolverMap from './resolvers';
+import typeDefs from './schema';
+
+const server = new ApolloServer({ typeDefs, resolvers: resolverMap });
+
+server.listen().then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`);
+});

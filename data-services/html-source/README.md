@@ -2,9 +2,9 @@
 
 Uses simple web scrapping technique with Cherrio using the mimi.pnca.edu web site (for now)
 
-## JavaScript and a TypeScript examples
+## JavaScript examples
 
-The two examples are found in mimi-server and mimi-server__typescript. See the READMEs in those directories for instructions on installing and running, and example data.
+The two examples are found in mimi-server and mimi-server__structured. See the READMEs in those directories for instructions on installing and running, and example data.
 
 ## Example HTML
 
