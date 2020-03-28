@@ -1,4 +1,4 @@
-import { getCollections } from './collections'
+import { getCollections } from './collections.js'
 const resolverMap = {
   Query: {
     collections: async(_, args) => {

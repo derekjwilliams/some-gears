@@ -1,4 +1,6 @@
-const { gql } = require('apollo-server');
+import apollo from 'apollo-server'
+const { gql } = apollo
+//import { gql } from 'apollo-server'
 
 const typeDefs = gql`
   "Collection defines the queryable fields for every collection in mimi"

@@ -1,6 +1,5 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 import cheerio from 'cheerio';
-
 
 const getCollections = async(kind) => {
   return fetch(`https://mimi.pnca.edu/f/${kind}`, {"credentials":"exclude","headers":{"accept":"text/html,application/xhtml+xml","accept-language":"en-US","cache-control":"no-cache","pragma":"no-cache"},"method":"GET"})

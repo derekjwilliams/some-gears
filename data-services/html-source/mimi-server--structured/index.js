@@ -1,6 +1,7 @@
-const { ApolloServer, gql } = require('apollo-server');
-import resolverMap from './resolvers';
-import typeDefs from './schema';
+import apollo from 'apollo-server'
+const { ApolloServer } = apollo
+import resolverMap from './resolvers.js';
+import typeDefs from './schema.js';
 
 const server = new ApolloServer({ typeDefs, resolvers: resolverMap });
 

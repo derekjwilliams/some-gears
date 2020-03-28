@@ -4,9 +4,7 @@ This is a fairly standard structure, with the schema and resolvers in to their o
 
 ## Other changes from ../mimi-server
 
-### import and export instead of require
+Uses import and export instead of require
 
-[esm](https://www.npmjs.com/package/esm) is used to provide support for standard JavaScript import and export, which are not supported natively in node yet (as of 13.9).  The `--experimental-support` flag could also be used if one does not want to use esm.
-
-
+See https://github.com/apollographql/apollo-server/issues/3786 for workaround to address issue in apollo-server import
 
