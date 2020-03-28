@@ -9,6 +9,8 @@ This simple example gets the collections html content from `https://mimi.pnca.ed
 ```
 npm install
 
+npm install -g nodemon
+
 nodemon index.js
 ```
 
@@ -25,7 +27,7 @@ Enter a query, for example
 }
 ```
 
-This will return the historical collections from mimi, e.g. 
+This will return the historical collections from mimi, e.g.
 
 ```{
   "data": {
