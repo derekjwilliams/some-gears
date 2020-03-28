@@ -64,3 +64,12 @@ This will return the historical collections from mimi, e.g.
   }
 }
 ```
+
+
+## Dockerfile
+
+Very simple docker file
+
+To build: `docker build --tag mimi-simple`
+
+To run: `docker run -p 4000:4000 --detach mimi-simple`
