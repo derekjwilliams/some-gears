@@ -22,7 +22,8 @@ Enter a query, for example
     href
     backgroundImage
   }
-}```
+}
+```
 
 This will return the historical collections from mimi, e.g. 
 
@@ -61,4 +62,5 @@ This will return the historical collections from mimi, e.g.
       }
     ]
   }
-}```
+}
+```
