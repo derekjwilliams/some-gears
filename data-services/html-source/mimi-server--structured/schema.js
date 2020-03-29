@@ -8,7 +8,7 @@ const typeDefs = gql`
     "The collection title"
     title: String
     href: String
-    backgroundImage: String
+    thumbnailImage: String
   }
 
   type Query {

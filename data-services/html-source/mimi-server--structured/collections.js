@@ -14,12 +14,12 @@ const getCollections = async(kind) => {
           const item = {}
   
           //TODO a bit of a hack parsing the html, which is prone to failure, add some checks on elements
-          const style = $(this).parent().attr('style')
-          const backgroundImage = style.indexOf("''") === -1 ?  
-            (style.split('background-image:url(\'')[1]).split('?')[0]: ''
           item['href'] = $(this).parent().parent().attr('href')
-          item['backgroundImage'] = backgroundImage
           item['title'] = collectionsTitle.trim()
+          const style = $(this).parent().attr('style')
+          const thumbnailImage = style.indexOf("''") === -1 ?  
+            (style.split('background-image:url(\'')[1]).split('?')[0]: ''
+          item['thumbnailImage'] = thumbnailImage
           collections.push(item);
         }
       });
