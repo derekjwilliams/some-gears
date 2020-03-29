@@ -17,4 +17,4 @@ Simplest possible Dockerfile is also provided.
 
 ### Command line for explaining queries
 
-npx postgraphile -c postgres://postgres:postgres@127.0.0.1/blog --watch --enhce-graphiql --allow-explain
+npx postgraphile -c postgres://postgres:postgres@127.0.0.1/blog --watch --enhance-graphiql --allow-explain
