@@ -50,16 +50,29 @@ mutation CreateCollection($newCollection: CreateCollectionInput!) {
 
 ### Nested Mutations
 
-Run the service in 
+Run the service found in 
 
 ```
 data-services/postgraphile/express__nested-mutations
 ```
 
-e.g.
+This express service has the postgraphile `postgraphile-plugin-nested-mutations` extension installed (see the extension's [github](https://github.com/mlipscombe/postgraphile-plugin-nested-mutations) and [npm](https://www.npmjs.com/package/postgraphile-plugin-nested-mutations) for documentation)
 
-``````
- DATABASE_URL=postgres://postgres:postgres@127.0.0.1/artwork SCHEMA_NAMES=mimi node server.js
+---
+So to run:
+
+Go to the directory where the service is located and run the service
+
+```
+cd data-services/postgraphile/express__nested-mutations
+```
+Install using yarn (if needed)
+```
+yarn
 ```
 
-which has the nested mutations extension installed (https://github.com/mlipscombe/postgraphile-plugin-nested-mutations, https://www.npmjs.com/package/postgraphile-plugin-nested-mutations)
+Run the postgraphile server
+```
+DATABASE_URL=postgres://postgres:postgres@127.0.0.1/artwork SCHEMA_NAMES=mimi node server.js
+```
+
