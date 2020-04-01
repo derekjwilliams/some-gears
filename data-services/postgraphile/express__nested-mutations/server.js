@@ -16,7 +16,7 @@ app.use(
     pgPool,
     process.env.SCHEMA_NAMES ? process.env.SCHEMA_NAMES.split(',') : ['blog'],
     {
-      appendPlugins: [ConnectionFilterPlugin, PgManyToManyPlugin, PostGraphileNestedMutations],
+      appendPlugins: [ConnectionFilterPlugin, PostGraphileNestedMutations, PgManyToManyPlugin],
       graphileBuildOptions: {
         connectionFilterRelations: true,
       },

@@ -75,4 +75,99 @@ Run the postgraphile server
 ```
 DATABASE_URL=postgres://postgres:postgres@127.0.0.1/artwork SCHEMA_NAMES=mimi node server.js
 ```
+## Add an Album and A Parent Collection at the Same Time
 
+```
+mutation {
+  createAlbum(
+    input: {
+      album: {
+        title: "test album"
+        collectionAlbumsUsingId: {
+          create: {
+            collectionToCollectionId: {
+              create: { title: "parent test collection" }
+            }
+          }
+        }
+      }
+    }
+  ) {
+    album {
+      title
+      collectionAlbumsByAlbumId {
+        nodes {
+          collectionByCollectionId {
+            title
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### Or Starting at the Collection
+
+```
+mutation {
+  createCollection(
+    input: {
+      collection: {
+        title: "test2 collection"
+        collectionAlbumsUsingId: {
+          create: { albumToAlbumId: { create: { title: "test2 album" } } }
+        }
+      }
+    }
+  ) {
+    collection {
+      title
+      albumsByCollectionAlbumCollectionIdAndAlbumId {
+        nodes {
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+### Adding An Album Into Two New Collections
+
+```
+mutation {
+  createAlbum(
+    input: {
+      album: {
+        title: "test album"
+        collectionAlbumsUsingId: {
+          create: [
+            {
+              collectionToCollectionId: {
+                create: { title: "parent test7 collection" }
+              }
+            }
+            {
+              collectionToCollectionId: {
+                create: { title: "parent test5 collection" }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ) {
+    album {
+      title
+      collectionAlbumsByAlbumId {
+        nodes {
+          collectionByCollectionId {
+            title
+          }
+        }
+      }
+    }
+  }
+}
+```
