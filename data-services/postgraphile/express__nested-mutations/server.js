@@ -3,6 +3,7 @@ const express = require('express')
 const { postgraphile } = require('postgraphile')
 const ConnectionFilterPlugin = require('postgraphile-plugin-connection-filter')
 const PgManyToManyPlugin = require('@graphile-contrib/pg-many-to-many')
+const PostGraphileNestedMutations = require('postgraphile-plugin-nested-mutations');
 
 const app = express()
 
@@ -15,7 +16,7 @@ app.use(
     pgPool,
     process.env.SCHEMA_NAMES ? process.env.SCHEMA_NAMES.split(',') : ['blog'],
     {
-      appendPlugins: [ConnectionFilterPlugin, PgManyToManyPlugin],
+      appendPlugins: [ConnectionFilterPlugin, PgManyToManyPlugin, PostGraphileNestedMutations],
       graphileBuildOptions: {
         connectionFilterRelations: true,
       },
@@ -28,7 +29,7 @@ app.use(
       },
     }
   )
-)
+);
 
 app.listen(process.env.PORT || 5000)
 console.log(`🚀 Server ready at http://localhost:5000/graphql`)

@@ -5,7 +5,7 @@ This little application runs a simple graphql server running at localhost:5000/g
 
 ```connectionString: (process.env.DATABASE_URL || 'postgres://USERNAME:PASSWORD@localhost:5432/DB')```
 
-If not provided the connection string is ```postgres://postgres:postgres@localhost/public```
+If not provided the connection string is `postgres://postgres:postgres@localhost/blog` with the schema `blog`
 
 ## Running the server:
 
@@ -15,6 +15,7 @@ If not provided the connection string is ```postgres://postgres:postgres@localho
 
 Simplest possible Dockerfile is also provided.
 
-### Command line for explaining queries
+### Command line for Explaining Queries
 
 npx postgraphile -c postgres://postgres:postgres@127.0.0.1/blog --watch --enhance-graphiql --allow-explain
+
