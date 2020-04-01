@@ -8,7 +8,7 @@ ALTER SCHEMA mimi OWNER TO postgres;
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp" with schema public;
 
 CREATE TABLE mimi.album (
-    id uuid DEFAULT mimi.uuid_generate_v4() NOT NULL,
+    id uuid DEFAULT public.uuid_generate_v4() NOT NULL,
     title text,
     href text,
     thumbnail_image_url text
@@ -16,7 +16,7 @@ CREATE TABLE mimi.album (
 COMMENT ON TABLE mimi.album IS 'An Album of Creative Works';
 
 CREATE TABLE mimi.collection (
-    id uuid DEFAULT mimi.uuid_generate_v4() NOT NULL,
+    id uuid DEFAULT public.uuid_generate_v4() NOT NULL,
     title text,
     thumbnail_image_url text,
     href text
