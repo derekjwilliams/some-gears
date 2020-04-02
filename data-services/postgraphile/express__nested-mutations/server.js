@@ -3,7 +3,7 @@ const express = require('express')
 const { postgraphile } = require('postgraphile')
 const ConnectionFilterPlugin = require('postgraphile-plugin-connection-filter')
 const PgManyToManyPlugin = require('@graphile-contrib/pg-many-to-many')
-const PostGraphileNestedMutations = require('postgraphile-plugin-nested-mutations');
+const PostGraphileNestedMutations = require('postgraphile-plugin-nested-mutations')
 
 const app = express()
 
