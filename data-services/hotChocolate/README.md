@@ -17,7 +17,10 @@ HotChocolate.Types.Filters version 10.3.5<br />
 HotChocolate.Types.Sorting version 10.3.5<br />
 Microsoft.EntityFrameworkcore.SqlServer 3.1.1<br />
 
-## Clients...
+## Clients Table
+
+```sql
+
 CREATE TABLE [dbo].[Clients](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[PublicKey] [uniqueidentifier] NOT NULL,
@@ -40,9 +43,11 @@ GO
 
 ALTER TABLE [dbo].[Clients] ADD  DEFAULT (getutcdate()) FOR [LastUpdatedOn]
 GO
+```
 
 ### ClientUIInfos
 
+```sql
 CREATE TABLE [dbo].[ClientUIInfos](
 	[Id] [int] NOT NULL,
 	[Theme] [nvarchar](2048) NULL,
@@ -61,9 +66,11 @@ GO
 
 ALTER TABLE [dbo].[ClientUIInfos] CHECK CONSTRAINT [FK_dbo.ClientUIInfos_dbo.Clients_Id]
 GO
+```
 
 ### Users
 
+```sql
 CREATE TABLE [dbo].[Users](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[UserName] [nvarchar](100) NOT NULL,
@@ -104,8 +111,11 @@ GO
 
 ALTER TABLE [dbo].[Users] CHECK CONSTRAINT [FK_dbo.Users_dbo.Clients_ClientId]
 GO
+```
 
 ### UserClaims
+
+```sql
 CREATE TABLE [dbo].[UserClaims](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[UserId] [int] NOT NULL,
@@ -134,38 +144,23 @@ GO
 
 ALTER TABLE [dbo].[UserClaims] CHECK CONSTRAINT [FK_dbo.UserClaims_dbo.Users_UserId]
 GO
-
-
-
+```
 
 ### Getting Started in this repo
-1. Clone this repo
-2. add the above tables to your sqlServer database
-3. add the connections string in the sln.  It needs to live in appsettings.json under the sln context.  
-    you will need to add it under the empty "ConnectionString" key
-4. you may need to install the nuget packages.  I used version 10.3.5 for all the hot chocolate packages.  I also used
-EntityFrameworkCore.SqlServer 3.1.1 for connecting to sql server
+
+1. Clone the some-gears repo (e.g. `git clone https://github.com/derekjwilliams/some-gears.git`)
+
+2. Add the tables to your sqlServer database (sql scripts above)
+
+3. Add the connections string in the project sln file.  It needs to live in appsettings.json under the sln context. Add it under the empty "ConnectionString" key
+
+4. You may need to install the nuget packages.  I used version 10.3.5 for all the Hot Chocolate packages.  I also used
+EntityFrameworkCore.SqlServer 3.1.1
 
 ## Tech Stack (partial list)
-Entity Framework Core
-HotChocolate
-C#
-Linq
 
-
-### Databases
-* SQL Server
-
-### data-services 
-
-Where the graphql services live.  See the README in each of the folders under the data-services folder.  When it makes sense there will be more complex services under the data-services child folders
-
-## databases
-
-What it sounds like, backups of the databases, and ddl.
-
-## ui
-Playground
-Voyager
-
+* Entity Framework Core
+* HotChocolate
+* C#
+* Linq
 
