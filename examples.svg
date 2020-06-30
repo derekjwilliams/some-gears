@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.1-dev (bc69992, 2020-04-15)"
+   sodipodi:docname="examples.svg"
+   version="1.1"
+   width="121px"
+   height="311px"
+   viewBox="-0.5 -0.5 121 311"
+   content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2020-06-30T16:20:22.050Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36&quot; etag=&quot;wGEdwGGTPsbiqi40pcDl&quot; version=&quot;13.3.5&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;2izscQ4uSE_haQEnlgqm&quot; name=&quot;Page-1&quot;&gt;zVbfb5swEP5reNxkMIm61yZp+rBJlbKtzaMVLuDKcMgxAfbXz8A5BqFG7X6olSKF++47c/fdnZOAr/Jmq0WZfcMEVBCxpAn4OoiiMIq/2K8OaQfkJmQDkGqZEMkDO/kLCHS0SiZwmhANojKynIIHLAo4mAkmtMZ6Sjuimr61FCnMgN1BqDn6KBOTURUL5vF7kGnm3hwy8uTCkQk4ZSLBegTxTcBXGtEMT3mzAtWJ53QZ4u5e8F4S01CY1wQsj/sf6+yQR9vv/OlR8fXP7e2niHIzrSsYEls/mahNhikWQm08equxKhLoTmXW8pyviKUFQws+gzEtNVNUBi2UmVyRd545FXPCSh/gSrrE63IcBVK9W8AcjG4tQYMSRp6nPRQ0CumFdwl9QGlTiRiNbex6RkMb3bDpEUboFAxFec3twygND/WdeENXKOGzUBWVsEKluvGO2K7SZ2hPs775rnQS15k0sCtFr2ZtV/OVHTiDNtBc1Za8fDnVKHQrUfs1CZ2O2WhFluzldkyEfKtqi/eYZWikeerCPy/I2o8864ZO7o3WGYUtdxTUmfuxz4f1lov7873hdHP2Y3uFF//r/fqrhvLZGgT8jj4fbfwvV8S7jX88U+tB41GaDydVzP6fVNb0v6jDdez/l/DNbw==&lt;/diagram&gt;&lt;/mxfile&gt;"
+   id="svg54">
+  <sodipodi:namedview
+     inkscape:current-layer="g44"
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:cy="106.0024"
+     inkscape:cx="59.307287"
+     inkscape:zoom="3.3536977"
+     showgrid="false"
+     id="namedview857"
+     inkscape:window-height="1209"
+     inkscape:window-width="1270"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <metadata
+     id="metadata58">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <g
+     id="g44">
+    <path
+       d="M 60 60 L 60 123.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path12" />
+    <path
+       d="M 60 128.88 L 56.5 121.88 L 60 123.63 L 63.5 121.88 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path14" />
+    <rect
+       x="0"
+       y="0"
+       width="120"
+       height="60"
+       rx="9"
+       ry="9"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect16" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g22">
+      <switch
+         id="switch20">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 30px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">Collect Surveys</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="60"
+           y="34"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text18">Learn</text>
+      </switch>
+    </g>
+    <path
+       d="M 60 190 L 60 243.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path24" />
+    <path
+       d="M 60 248.88 L 56.5 241.88 L 60 243.63 L 63.5 241.88 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path26" />
+    <rect
+       x="0"
+       y="130"
+       width="120"
+       height="60"
+       rx="9"
+       ry="9"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect28" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g34">
+      <switch
+         id="switch32">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 160px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">???</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="60"
+           y="164"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text30">???</text>
+      </switch>
+    </g>
+    <rect
+       x="0"
+       y="250"
+       width="120"
+       height="60"
+       rx="9"
+       ry="9"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect36" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g42">
+      <switch
+         id="switch40">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 280px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">Profit</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="60"
+           y="284"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text38">Profit</text>
+      </switch>
+    </g>
+  </g>
+  <switch
+     id="switch52">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g46" />
+    <a
+       transform="translate(0,-5)"
+       xlink:href="https://desk.draw.io/support/solutions/articles/16000042487"
+       target="_blank"
+       id="a50">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text48">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>
