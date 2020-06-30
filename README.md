@@ -4,6 +4,8 @@ This is intended to help developers learn graphql by starting at the very basics
 
 ## Motivation
 
+![](./example.svg)
+
 
 
 There are already many excellent tutorials for graphql, this is not intended to replace those.  There are also many getting started repositories out there, while some-gears does that, it also seeks to show developers how to go from there to actual working examples that are non-trivial.
