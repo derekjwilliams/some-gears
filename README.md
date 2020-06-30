@@ -4,7 +4,7 @@ This is intended to help developers learn graphql by starting at the very basics
 
 ## Motivation
 
-![](./example.svg)
+![](./examples.svg)
 
 
 
